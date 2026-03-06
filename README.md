@@ -14,4 +14,4 @@ Welcome! This repository documents has a collection of automation app script I'v
 * **Impact:** Reduced administrative touchpoints by 40%, enabling higher bid volume handling.
 
 ---
-**Technical Stack:** Google Apps Script (JavaScript), Power BI (In-Progress), SQL.
+**Technical Stack:** Google Apps Script (JavaScript), Power BI (In-Progress), SQL(In-Progress).
