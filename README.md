@@ -4,8 +4,8 @@ Welcome! This repository documents has a collection of automation app script I'v
 ## 📁 Projects
 
 ### 📅 Automated Team Logistics Suite
-* **Problem:** Manual tracking of team Time-off Request to scheduling friction.
-* **Solution:** Integrated Google Forms + Apps Script to automate a self-sustaining calendar.
+* **Problem:** Team Memebers inconsistent about entering time off in their google calendar, which causes scheduling friction.
+* **Solution:** Integrated Google Forms(Reduce mental efforts) + Apps Script to automate a self-sustaining group calendar.
 * **Impact:** 7+ months of automated weekly summary reports delivered to the team every Tuesday morning.
 
 ### 💼 RFQ Lifecycle Engine
