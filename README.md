@@ -1,4 +1,4 @@
-# proposal-ops-automation
+# Proposal-ops-automation
 Welcome! This repository documents has a collection of automation app script I've built and designed to optimize the proposal lifecycle, RFQ workflows, and operational/admin logistics for large-scale industrial bidding.
 
 ## 📁 Projects
