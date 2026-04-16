@@ -1,5 +1,5 @@
-# Proposal-ops-automation
-Welcome! This repository documents has a collection of automation app script I've built and designed to optimize the proposal lifecycle, RFQ workflows, and operational/admin logistics for large-scale industrial bidding.
+# Proposal-Ops-automation
+Welcome! This repository documents has a collection of automation app script I've built and designed to optimize the Proposal lifecycle, RFQ workflows, and operational/admin logistics for large-scale Construction bidding.
 
 ## 📁 Projects
 
@@ -11,7 +11,7 @@ Welcome! This repository documents has a collection of automation app script I'v
 ### 💼 RFQ Lifecycle Engine
 * **Problem:** Inefficient manual processing of high-volume vendor requests.
 * **Solution:** Modular automation script connecting Gmail labels to structured Google Drive architectures.
-* **Impact:** Reduced administrative touchpoints by 40%, enabling higher bid volume handling.
+* **Impact:** Reduced administrative touchpoints by 30%, enabling higher bid volume handling.
 
 ---
-**Technical Stack:** Google Apps Script (JavaScript), Power BI (In-Progress), SQL(In-Progress).
+**Technical Stack:** Google Apps Script (JavaScript)
