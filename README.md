@@ -15,6 +15,16 @@ I'm CY! I build automation tools that streamline administrative and bid-manageme
 * **Solution:** Integrated Google Forms(Reduce mental efforts) + Apps Script to automate a self-sustaining group calendar.
 * **Impact:** 7+ months of automated weekly summary reports delivered to the team every week.
 
+#### Features
+- Automatically creates calendar events from form submissions
+- Supports all-day and timed absences
+- Assigns color-coded events per team member
+- Validates missing or incorrect input data
+- Built using Google Apps Script
+
+#### Workflow
+Google Form → Google Sheet → Apps Script → Google Calendar
+
 ### 💼 RFQ Lifecycle Engine
 * **Problem:** Inefficient manual processing of high-volume vendor requests.
 * **Solution:** Modular automation script connecting Gmail labels to structured Google Drive architectures.
