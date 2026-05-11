@@ -1,5 +1,5 @@
 function onFormSubmit(e) {
-  const calendarId = 'calendarID@group.calendar.google.com';
+  const calendarId = 'your-calendar-id@group.calendar.google.com';
   const calendar = CalendarApp.getCalendarById(calendarId);
 
   const responses = e.values;
