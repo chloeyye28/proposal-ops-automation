@@ -1,12 +1,19 @@
-# Proposal-Ops-automation
-Welcome! This repository documents has a collection of automation app script I've built and designed to optimize the Proposal lifecycle, RFQ workflows, and operational/admin logistics for large-scale Construction bidding.
+# Proposal Ops Automation
+## About Me
 
-## 📁 Projects
+I'm CY! I build automation tools that streamline administrative and bid-management workflows using:
+- Google Apps Script
+- Google Sheets
+- Gmail Automation
+- Google Drive API
+- Workflow & Process Automation
 
-### 📅 Automated Team Logistics Suite
+## Projects
+
+### Automated Team Logistics Suite
 * **Problem:** Team Memebers inconsistent about entering time off in their google calendar, which causes scheduling friction.
 * **Solution:** Integrated Google Forms(Reduce mental efforts) + Apps Script to automate a self-sustaining group calendar.
-* **Impact:** 7+ months of automated weekly summary reports delivered to the team every Tuesday morning.
+* **Impact:** 7+ months of automated weekly summary reports delivered to the team every week.
 
 ### 💼 RFQ Lifecycle Engine
 * **Problem:** Inefficient manual processing of high-volume vendor requests.
