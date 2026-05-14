@@ -76,3 +76,30 @@ The output is written into a Google Sheet in a structured, readable format. Easy
 
 ## Workflow
 Google Sheets (Folder URL input) → Apps Script → Google Drive traversal → Structured hierarchy output in Sheet --> Exported to PDF (optional)
+
+---
+
+## Tool #3: Google Drive Hierarchical Folder Numbering Automation
+
+### Problem
+Google Drive does not provide a fast way to enforce structured hierarchical numbering across folders and files folders. As a result, when folders such as proposal submission packages contain complex nested structures requiring hierarchical numbering, files must be renamed individually, which is extremely time-consuming. The only alternative is using third-party batch renaming add-ons, which introduces unnecessary risks of exposing project information.
+
+### Solution
+A Google Apps Script-based automation tool that recursively applies hierarchical numbering to folders and files in Google Drive.
+
+The system:
+- Detects existing numeric prefixes for parent folders (e.g., 1, 1.1, 1.1.1)  
+- Applies structured hierarchical numbering to all subfolders and files  
+- Maintains sorted order using natural sorting logic  
+- Renames items directly in Google Drive while preserving structure  
+
+This creates a consistent hierarchical structure across the entire folder system.
+
+### Impact
+- Enforces consistent folder and file naming structure
+- Completing hirarchical numbering for complex folders in one-click  
+- Reduces manual effort required for organizing proposal/project directories  
+- Standardizes hierarchy across teams and workflows  
+
+## Workflow
+Google Sheets (Root Folder URL input) → Apps Script Engine → Drive Structure Analysis → Recursive Renaming Engine → Google Drive (Updated Hierarchical Naming System)
