@@ -1,5 +1,6 @@
 # Proposal Ops Automation
-## About Me
+
+## About
 
 I'm CY! I build automation tools that streamline administrative and bid-management workflows using:
 - Google Apps Script (JavaScript)
@@ -8,9 +9,11 @@ I'm CY! I build automation tools that streamline administrative and bid-manageme
 - Google Drive API
 - Workflow & Process Automation
 
+***
+
 ## Projects
 
-### Automated Team Logistics Suite (Google Forms → Scheduling Intelligence → Calendar + Reporting System)
+### 1. Automated Team Logistics Suite (Google Forms → Scheduling Intelligence → Calendar + Reporting System)
 
 * **Problem:** Team members weren’t consistently logging time off in a shared calendar, which led to scheduling conflicts and constant manual follow-ups.
 * **Solution:** A Google Forms + Apps Script automation that turns form submissions into calendar events and weekly summary emails, keeping a shared team calendar automatically up to date.
@@ -31,7 +34,7 @@ Google Form → Google Sheet → Apps Script → Google Calendar → Gmail
 
 ***
 
-### Automated Project Tracker (Google Sheets → Calendar Intelligence System)
+### 2. Automated Project Tracker (Google Sheets → Calendar Intelligence System)
 
 * **Problem:** Project deadlines were being tracked manually in Google Calendar, which was slow and often out of sync with the actual spreadsheet data.
 * **Solution:** A Google Apps Script tool that reads project data from a spreadsheet and automatically creates calendar events and a visual schedule view inside the sheet.
