@@ -53,18 +53,13 @@ Google Sheets (Source & Destination Folder URL input) → Apps Script Engine →
 Google Drive does not provide a native way to export or visualize folder structures in a structured, hierarchical format.
 Manually inspecting nested folders is inefficient and does not scale for large documentation systems.
 
----
-
 ### Solution
 A Google Apps Script tool that recursively traverses a Google Drive folder structure and extracts:
 
 - Folder hierarchy
 - File names
 - Structured numbering patterns (if present in naming conventions)
-
 The output is written into a Google Sheet in a structured, readable format. Easy to copy and paste into a table of contents template, and also has the option to export to a PDF file.
-
----
 
 ### Impact
 - Enables quick visualization of complex Drive folder structures  
@@ -72,16 +67,12 @@ The output is written into a Google Sheet in a structured, readable format. Easy
 - Improves visibility into proposal/document organization  
 - Supports structured documentation workflows in Google Workspace  
 
----
-
 ### Features
 - Recursive folder traversal (nested structure support)  
 - File and folder extraction in hierarchical order  
 - Natural sorting of alphanumeric file names  
 - Pattern recognition for numbered naming structures  
 - Outputs structured data directly into Google Sheets  
-
----
 
 ### Workflow
 Google Sheets (Folder URL input) → Apps Script → Google Drive traversal → Structured hierarchy output in Sheet --> Exported to PDF (optional)
