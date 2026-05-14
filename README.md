@@ -31,7 +31,7 @@ I'm CY! I build automation tools that streamline administrative and bid-manageme
 #### Workflow
 Google Form → Google Sheet → Apps Script → Google Calendar → Gmail
 
-
+***
 
 ### 2. Automated Project Tracker (Google Sheets → Calendar Intelligence System)
 
