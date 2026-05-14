@@ -74,5 +74,5 @@ The output is written into a Google Sheet in a structured, readable format. Easy
 - Pattern recognition for numbered naming structures  
 - Outputs structured data directly into Google Sheets  
 
-### Workflow
+## Workflow
 Google Sheets (Folder URL input) → Apps Script → Google Drive traversal → Structured hierarchy output in Sheet --> Exported to PDF (optional)
