@@ -2,7 +2,7 @@
 ## About Me
 
 I'm CY! I build automation tools that streamline administrative and bid-management workflows using:
-- Google Apps Script
+- Google Apps Script (JavaScript)
 - Google Sheets
 - Gmail Automation
 - Google Drive API
@@ -10,25 +10,42 @@ I'm CY! I build automation tools that streamline administrative and bid-manageme
 
 ## Projects
 
-### Automated Team Logistics Suite
-* **Problem:** Team Memebers inconsistent about entering time off in their google calendar, which causes scheduling friction.
-* **Solution:** Integrated Google Forms(Reduce mental efforts) + Apps Script to automate a self-sustaining group calendar.
-* **Impact:** 7+ months of automated weekly summary reports delivered to the team every week.
+### Automated Team Logistics Suite (Google Forms → Scheduling Intelligence → Calendar + Reporting System)
+
+* **Problem:** Team members weren’t consistently logging time off in a shared calendar, which led to scheduling conflicts and constant manual follow-ups.
+* **Solution:** A Google Forms + Apps Script automation that turns form submissions into calendar events and weekly summary emails, keeping a shared team calendar automatically up to date.
+* **Impact:**
+* Reduced manual work needed to track team availability
+* Ran reliably for 7+ months
+* Sending weekly scheduling summaries automatically
 
 #### Features
-- Automatically creates calendar events from form submissions
-- Supports all-day and timed absences
-- Assigns color-coded events per team member
-- Validates missing or incorrect input data
-- Built using Google Apps Script
+* Automatically creates calendar events from form submissions
+* Supports all-day and timed absences
+* Assigns color-coded events per team member
+* Validates missing or incorrect input data
+* Built using Google Apps Script
 
 #### Workflow
-Google Form → Google Sheet → Apps Script → Google Calendar
+Google Form → Google Sheet → Apps Script → Google Calendar → Gmail
 
-### 💼 RFQ Lifecycle Engine
-* **Problem:** Inefficient manual processing of high-volume vendor requests.
-* **Solution:** Modular automation script connecting Gmail labels to structured Google Drive architectures.
-* **Impact:** Reduced administrative touchpoints by 30%, enabling higher bid volume handling.
+***
 
----
-**Technical Stack:** Google Apps Script (JavaScript)
+### Automated Project Tracker (Google Sheets → Calendar Intelligence System)
+
+* **Problem:** Project deadlines were being tracked manually in Google Calendar, which was slow and often out of sync with the actual spreadsheet data.
+* **Solution:** A Google Apps Script tool that reads project data from a spreadsheet and automatically creates calendar events and a visual schedule view inside the sheet.
+* **Impact:**
+* Removed the need for manual calendar updates
+* Kept project deadlines in sync between Google Sheets and Google Calendar
+* Made it easier to see upcoming workload in one place
+
+#### Features
+* Automated (Active) Project prioritization
+* Dynamic calendar generation inside Google Sheet
+* Cross-month workload visualization
+* Calendar sync with duplicate prevention
+* Priority-based visual encoding
+
+#### Workflow
+Google Sheets → Data Processing Engine → Calendar Visualization Layer → Google Calendar Sync Engine
