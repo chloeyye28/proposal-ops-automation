@@ -120,8 +120,6 @@ As a result, users often rely on manual steps:
 
 This becomes inefficient and error-prone when dealing with large batches of documents.
 
----
-
 ### Solution
 A Google Apps Script-based batch automation tool that converts multiple Google Docs into PDFs using a spreadsheet-driven workflow.
 
@@ -135,8 +133,6 @@ The system:
 
 This creates a fully automated batch document processing pipeline inside Google Workspace.
 
----
-
 ### Impact
 - Eliminates repetitive manual PDF exporting tasks  
 - Enables bulk document processing from a single interface  
@@ -144,7 +140,51 @@ This creates a fully automated batch document processing pipeline inside Google 
 - Centralizes document conversion workflow inside Google Sheets  
 - Reduces operational overhead for proposal/document preparation  
 
----
-
 ## Workflow
 Google Sheets (Doc URL Input + Destination Folder) → Apps Script Engine → Google Drive Export API → PDF Generation → Drive Storage + Status Logging in Sheet
+
+---
+
+## Tool #5: Google Drive Folder Naming Normalization
+
+### Problem
+
+Large proposal and project folders often develop inconsistent naming conventions due to manual folder creation, including:
+
+- FULLY CAPITALIZED folder names
+- inconsistent formatting styles
+- lack of standardization across projects
+
+This reduced readability and created inconsistencies in shared document environments.
+
+### Solution
+
+A Google Apps Script automation tool that recursively scans Google Drive folder structures and automatically normalizes folder naming conventions using configurable formatting rules.
+
+The tool:
+- detects mostly-uppercase folder names
+- converts names into standardized Title Case
+- preserves technical acronyms (QA, QC, ISO, etc.)
+- processes nested subfolders recursively
+- supports preview mode before applying changes
+
+### Impact
+
+- Reduced manual folder/file naming cleanup work
+- Standardized naming conventions across proposal/project environments
+- Improved readability of large folder structures
+ 
+### Features
+
+- Recursive folder scanning
+- Uppercase detection logic
+- Smart Title Case conversion
+- Acronym preservation system
+- Configurable formatting thresholds
+- Google Sheets input-driven workflow
+
+## Workflow
+
+Google Sheets (Targeted Folder URL) → Apps Script Engine → Recursive Google Drive Processing → Folder Naming Standardization
+
+---
