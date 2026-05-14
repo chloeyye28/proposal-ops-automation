@@ -103,3 +103,48 @@ This creates a consistent hierarchical structure across the entire folder system
 
 ## Workflow
 Google Sheets (Root Folder URL input) → Apps Script Engine → Drive Structure Analysis → Recursive Renaming Engine → Google Drive (Updated Hierarchical Naming System)
+
+---
+
+## Tool #4: Batch Google Docs to PDF Export Automation
+
+### Problem
+Google Drive does not provide a scalable way to batch-convert multiple Google Docs into PDFs while also organizing outputs into a structured workflow.
+
+As a result, users often rely on manual steps:
+
+- Opening each document individually  
+- Exporting to PDF one by one  
+- Downloading and re-uploading files  
+- Manually tracking conversion status  
+
+This becomes inefficient and error-prone when dealing with large batches of documents.
+
+---
+
+### Solution
+A Google Apps Script-based batch automation tool that converts multiple Google Docs into PDFs using a spreadsheet-driven workflow.
+
+The system:
+
+- Reads a list of Google Doc URLs from Google Sheets  
+- Converts each document into PDF using Google Drive export API  
+- Saves PDFs into a specified destination folder  
+- Logs success/failure status per document  
+- Outputs generated PDF links back into the sheet  
+
+This creates a fully automated batch document processing pipeline inside Google Workspace.
+
+---
+
+### Impact
+- Eliminates repetitive manual PDF exporting tasks  
+- Enables bulk document processing from a single interface  
+- Improves tracking with real-time success/failure status  
+- Centralizes document conversion workflow inside Google Sheets  
+- Reduces operational overhead for proposal/document preparation  
+
+---
+
+## Workflow
+Google Sheets (Doc URL Input + Destination Folder) → Apps Script Engine → Google Drive Export API → PDF Generation → Drive Storage + Status Logging in Sheet
