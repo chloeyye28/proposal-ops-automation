@@ -32,6 +32,7 @@ I'm CY! I build automation tools that streamline administrative and bid-manageme
 Google Form → Google Sheet → Apps Script → Google Calendar → Gmail
 
 
+
 ### 2. Automated Project Tracker (Google Sheets → Calendar Intelligence System)
 
 * **Problem:** Project deadlines were being tracked manually in Google Calendar, which was slow and often out of sync with the actual spreadsheet data.
