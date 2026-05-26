@@ -1,16 +1,3 @@
-/**
- * Normalize Google Drive folder names from a folder URL entered in B1.
- *
- * Features:
- * - Recursively scans nested folders
- * - Converts MOSTLY-UPPERCASE names into Title Case
- * - Preserves known acronyms (QA, QC, ISO, etc.)
- * - Supports preview mode (Dry Run)
- *
- * Sheet Setup:
- * B1 = Source Google Drive Folder URL
- */
-
 function normalizeDriveFolderNaming() {
 
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
