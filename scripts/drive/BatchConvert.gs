@@ -1,16 +1,3 @@
-/**
- * Batch export Google Docs to PDF
- *
- * SHEET SETUP
- * -------------------------------------------------
- * Tab Name: Batch PDFing
- *
- * B1 = Destination folder URL
- * A7:A = Google Doc links
- * B7:B = Status feedback
- * C7:C = PDF link output
- */
-
 function batchConvertFromSheet() {
   const ss = SpreadsheetApp.getActive();
   const sheet = ss.getSheetByName("Batch PDFing");
