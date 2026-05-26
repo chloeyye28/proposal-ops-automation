@@ -1,7 +1,24 @@
-# Projects
+# Team & Calender Automation
 
-## 1. Automated Team Logistics Suite  
-*(Google Forms → Scheduling Intelligence → Calendar + Reporting System)*
+## About
+These projects were built to automate internal workflows, reduce manual scheduling overhead, and synchronize project due dates into Google Calendar for centralized tracking using Google Workspace automation tools.
+
+## Tech Stack
+- Google Apps Script (JavaScript)
+- Google Sheets
+- Google Forms
+- Google Calendar
+- Gmail API (via Apps Script)
+
+## Features Overview
+- Automatically creates Google Calendar events from form submissions  
+- Supports both all-day and timed absences  
+- Color-coded events per team member  
+- Input validation for missing or incorrect data  
+- Built using Google Apps Script  
+---
+    
+## Tool # 1. Automated Team Logistics Suite  
 
 ### Problem
 Team members were not consistently logging time off in a shared calendar, leading to scheduling conflicts and frequent manual follow-ups.
@@ -14,20 +31,12 @@ Built a Google Forms + Apps Script automation system that converts form submissi
 - System ran reliably for 7+ months  
 - Automated weekly scheduling summary emails  
 
-### Features
-- Automatically creates Google Calendar events from form submissions  
-- Supports both all-day and timed absences  
-- Color-coded events per team member  
-- Input validation for missing or incorrect data  
-- Built using Google Apps Script  
-
 ### Workflow
 Google Form → Google Sheet → Apps Script → Google Calendar → Gmail  
 
 ---
 
-## 2. Automated Project Tracker  
-*(Google Sheets → Calendar Intelligence System)*
+## Tool #2. Automated Project Tracker  
 
 ### Problem
 Project deadlines were being tracked manually in Google Calendar, causing delays, inconsistencies, and misalignment with spreadsheet data.
@@ -51,15 +60,3 @@ Developed a Google Apps Script system that reads project data from a spreadsheet
 Google Sheets → Data Processing → Calendar Visualization → Google Calendar 
 
 ---
-
-## Tech Stack
-- Google Apps Script (JavaScript)
-- Google Sheets
-- Google Forms
-- Google Calendar
-- Gmail API (via Apps Script)
-
----
-
-## Notes
-These projects were built to automate internal workflows and reduce manual scheduling overhead using Google Workspace automation tools.
