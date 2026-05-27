@@ -66,13 +66,3 @@ Google Form → Google Sheets → Apps Script → Google Calendar → Email Summ
 
 ---
 
-## Notes
-
-This example form has been sanitized for public demonstration purposes.
-
-The following information has been removed or replaced:
-- Employee names
-- Email addresses
-- Internal company references
-- Organizational branding
-- Sensitive scheduling information
