@@ -1,4 +1,4 @@
-# RFQ Automation Suite
+# RFQ Automation
 
 ## End-to-End Workflow Map
 
