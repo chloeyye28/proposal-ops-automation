@@ -16,6 +16,7 @@ These projects were built to automate internal workflows, reduce manual scheduli
 - Color-coded events per team member  
 - Input validation for missing or incorrect data  
 - Built using Google Apps Script  
+
 ---
     
 ## Tool # 1. Automated Team Logistics Suite  
