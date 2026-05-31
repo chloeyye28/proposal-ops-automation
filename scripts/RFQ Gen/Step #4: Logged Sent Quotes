@@ -1,0 +1,210 @@
+function saveRfqOldestMessageAndAttachments() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getActiveSheet();
+
+  const bid = String(sheet.getRange("B1").getValue()).trim();
+  if (!bid) {
+    ss.toast('Please enter a reference ID in cell B1.', "Missing Input", 6);
+    return;
+  }
+
+  const thread = findNewestRfqThread_(bid);
+  if (!thread) {
+    ss.toast(`No matching thread found for: ${bid}`, "Not Found", 8);
+    return;
+  }
+
+  const msg = pickOldestMessage_(thread);
+  if (!msg) {
+    ss.toast(`Thread found but contains no messages.`, "Error", 8);
+    return;
+  }
+
+  const subject = msg.getSubject() || "";
+  const subtradeCode = extractSubtradeCode_(subject);
+
+  if (subtradeCode === null) {
+    ss.toast(`Could not parse sub-code from subject.`, "Parse Failed", 10);
+    return;
+  }
+
+  // =========================
+  // CONFIG (REPLACE THESE)
+  // =========================
+  const CONFIG = {
+    PARENT_FOLDER_ID: "REPLACE_WITH_DRIVE_FOLDER_ID",
+    THREAD_LABEL_SOURCE: "RFQ Sent",
+    THREAD_LABEL_DEST: "RFQ Sent Saved"
+  };
+
+  const parent = DriveApp.getFolderById(CONFIG.PARENT_FOLDER_ID);
+
+  const bidFolder = findChildFolderStrictContains_(parent, bid);
+  if (!bidFolder) {
+    ss.toast(`Could not locate folder for reference: ${bid}`, "Drive Error", 10);
+    return;
+  }
+
+  const managementFolder = findChildFolderContains_(bidFolder, "Subtrade Management");
+  if (!managementFolder) {
+    ss.toast(`Missing management folder under ${bid}`, "Drive Error", 10);
+    return;
+  }
+
+  const subtradeFolder = findSubtradeFolder_(managementFolder, subtradeCode);
+  if (!subtradeFolder) {
+    ss.toast(`Missing sub-folder for code: ${subtradeCode}`, "Drive Error", 10);
+    return;
+  }
+
+  const sentFolder = findChildFolderContains_(subtradeFolder, "Sent");
+  if (!sentFolder) {
+    ss.toast(`Missing "Sent" folder`, "Drive Error", 10);
+    return;
+  }
+
+  const pdfFile = saveSingleEmailAsPdf_(msg, sentFolder);
+  const attachmentCount = saveAttachments_(msg, sentFolder);
+
+  moveThreadLabel_(thread, CONFIG.THREAD_LABEL_SOURCE, CONFIG.THREAD_LABEL_DEST);
+
+  ss.toast(
+    `Done ✅\nPDF: ${pdfFile.getName()}\nAttachments: ${attachmentCount}`,
+    "Completed",
+    8
+  );
+}
+
+/**
+ * Find newest thread matching label + keyword
+ */
+function findNewestRfqThread_(keyword) {
+  const query = `label:"RFQ Sent" subject:"${keyword}"`;
+  const threads = GmailApp.search(query, 0, 20);
+  if (!threads || threads.length === 0) return null;
+
+  let bestThread = null;
+  let latestTime = 0;
+
+  threads.forEach(t => {
+    const msgs = t.getMessages();
+    const maxTime = Math.max(...msgs.map(m => m.getDate().getTime()));
+    if (maxTime > latestTime) {
+      latestTime = maxTime;
+      bestThread = t;
+    }
+  });
+
+  return bestThread;
+}
+
+/** Oldest message in thread */
+function pickOldestMessage_(thread) {
+  const msgs = thread.getMessages();
+  if (!msgs.length) return null;
+
+  return msgs.reduce((oldest, msg) =>
+    msg.getDate() < oldest.getDate() ? msg : oldest
+  );
+}
+
+/** Extract sub-code like XX from pattern: XXXX-XXXX-XX */
+function extractSubtradeCode_(subject) {
+  const match = subject.match(/\d{2}-\d{4}-(\d{2})\b/);
+  return match ? match[1] : null;
+}
+
+/** Strict folder match (token-safe) */
+function findChildFolderStrictContains_(parent, text) {
+  const folders = parent.getFolders();
+  const safe = text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`(^|[^A-Za-z0-9])${safe}([^A-Za-z0-9]|$)`);
+
+  while (folders.hasNext()) {
+    const f = folders.next();
+    if (regex.test(f.getName())) return f;
+  }
+  return null;
+}
+
+/** Simple folder contains match */
+function findChildFolderContains_(parent, text) {
+  const folders = parent.getFolders();
+  while (folders.hasNext()) {
+    const f = folders.next();
+    if (f.getName().includes(text)) return f;
+  }
+  return null;
+}
+
+/** Subfolder numeric match (robust against 1 vs 10 issues) */
+function findSubtradeFolder_(parent, code) {
+  const folders = parent.getFolders();
+  const num = parseInt(code, 10);
+
+  const regex = new RegExp(`(^|\\D)(?:${code}|${num})(?=\\D|$)`);
+
+  while (folders.hasNext()) {
+    const f = folders.next();
+    if (regex.test(f.getName())) return f;
+  }
+
+  return null;
+}
+
+/** Save email as PDF */
+function saveSingleEmailAsPdf_(message, folder) {
+  const subject = (message.getSubject() || "email")
+    .replace(/[\\\/:*?"<>|]+/g, "-");
+
+  const html = `
+    <html>
+      <body style="font-family:Arial;font-size:11pt;">
+        <h2>${escapeHtml_(subject)}</h2>
+        <p><b>From:</b> ${escapeHtml_(message.getFrom())}</p>
+        <p><b>Date:</b> ${message.getDate()}</p>
+        <hr/>
+        ${message.getBody()}
+      </body>
+    </html>
+  `;
+
+  const blob = HtmlService.createHtmlOutput(html)
+    .getBlob()
+    .getAs(MimeType.PDF)
+    .setName(`${subject}.pdf`);
+
+  return folder.createFile(blob);
+}
+
+/** Save attachments */
+function saveAttachments_(message, folder) {
+  const attachments = message.getAttachments();
+  let count = 0;
+
+  attachments.forEach(a => {
+    folder.createFile(a.copyBlob());
+    count++;
+  });
+
+  return count;
+}
+
+/** Label swap */
+function moveThreadLabel_(thread, from, to) {
+  const fromLabel = GmailApp.getUserLabelByName(from);
+  let toLabel = GmailApp.getUserLabelByName(to);
+
+  if (!toLabel) toLabel = GmailApp.createLabel(to);
+
+  if (fromLabel) thread.removeLabel(fromLabel);
+  thread.addLabel(toLabel);
+}
+
+/** Escape HTML */
+function escapeHtml_(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
