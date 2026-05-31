@@ -51,8 +51,17 @@ Optional comments or scheduling notes
 
 ## Automated Workflow
 
-Google Form → Google Sheets → Apps Script → Google Calendar → Email Summary Reporting
-
+```text
+Google Form
+↓
+Google Sheets
+↓
+Apps Script
+↓
+Google Calendar
+↓
+Email Summary Reporting
+```
 ---
 
 ## Features
