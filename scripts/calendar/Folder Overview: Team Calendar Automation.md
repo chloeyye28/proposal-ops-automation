@@ -33,8 +33,18 @@ Built a Google Forms + Apps Script automation system that converts form submissi
 - Automated weekly scheduling summary emails  
 
 ### Workflow
-Google Form → Google Sheet → Apps Script → Google Calendar → Gmail  
 
+```text
+Google Form
+↓
+Google Sheet
+↓
+Apps Script
+↓
+Google Calendar
+↓
+Gmail  
+```
 ---
 
 ## Tool #2. Automated Project Tracker  
@@ -58,6 +68,14 @@ Developed a Google Apps Script system that reads project data from a spreadsheet
 - Priority-based visual encoding  
 
 ### Workflow
-Google Sheets → Data Processing → Calendar Visualization → Google Calendar 
 
+```text
+Google Sheets
+↓
+Data Processing
+↓
+Calendar Visualization
+↓
+Google Calendar 
+```
 ---
