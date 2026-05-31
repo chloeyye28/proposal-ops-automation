@@ -1,10 +1,10 @@
 # Proposal/Project Submission Package Automation
 
 ## About
-A collection of Google Apps Script tools designed to automate proposal and project-related workflows inside Google Workspace, including Google Drive, Google Docs, and Google Sheets.This toolkit reduces manual effort involved in setting up, organizing, and managing proposal/project documentation structures.
+This toolkit reduces manual effort involved in setting up, organizing, and managing proposal/project documentation structures.
 
 ## Tech Stack
-- Google Apps Script (JavaScript-based)
+- Google Apps Script (JavaScript)
 - Google Sheets
 - Google Drive API
 - Google Docs API
