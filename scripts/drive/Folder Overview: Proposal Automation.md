@@ -43,7 +43,14 @@ The process is executed directly within Google Workspace without requiring exter
 - Improves consistency and reliability of document setup workflows
 
 ## Workflow
-Google Sheets (Source & Destination Folder URL input) → Apps Script Engine → Google Drive Automation
+
+```text
+Google Sheets (Source & Destination Folder URL input) 
+↓
+Apps Script Engine 
+↓
+Google Drive Automation
+```
 
 ---
 
@@ -75,7 +82,16 @@ The output is written into a Google Sheet in a structured, readable format. Easy
 - Outputs structured data directly into Google Sheets  
 
 ## Workflow
-Google Sheets (Folder URL input) → Apps Script → Google Drive traversal → Structured hierarchy output in Sheet --> Exported to PDF (optional)
+
+```text
+Google Sheets (Folder URL input)
+↓
+Apps Script → Google Drive traversal
+↓
+Structured hierarchy output in Sheet
+↓
+Exported to PDF (optional)
+```
 
 ---
 
@@ -102,8 +118,18 @@ This creates a consistent hierarchical structure across the entire folder system
 - Standardizes hierarchy across teams and workflows  
 
 ## Workflow
-Google Sheets (Root Folder URL input) → Apps Script Engine → Drive Structure Analysis → Recursive Renaming Engine → Google Drive (Updated Hierarchical Naming System)
 
+```text
+Google Sheets (Root Folder URL input)
+↓
+Apps Script Engine
+↓
+Drive Structure Analysis
+↓
+Recursive Renaming Engine
+↓
+Google Drive (Updated Hierarchical Naming System)
+```
 ---
 
 ## Tool #4: Batch Google Docs to PDF Export Automation
@@ -141,7 +167,20 @@ This creates a fully automated batch document processing pipeline inside Google 
 - Reduces operational overhead for proposal/document preparation  
 
 ## Workflow
-Google Sheets (Doc URL Input + Destination Folder) → Apps Script Engine → Google Drive Export API → PDF Generation → Drive Storage + Status Logging in Sheet
+
+```text
+Google Sheets (Doc URL Input + Destination Folder)
+↓
+Apps Script Engine
+↓
+Google Drive Export API
+↓
+PDF Generation
+↓
+Google Drive Storage
+↓
+Status Logging in Google Sheet
+```
 
 ---
 
@@ -185,6 +224,13 @@ The tool:
 
 ## Workflow
 
-Google Sheets (Targeted Folder URL) → Apps Script Engine → Recursive Google Drive Processing → Folder Naming Standardization
-
+```text
+Google Sheets (Targeted Folder URL)
+↓
+Apps Script Engine
+↓
+Recursive Google Drive Processing
+↓
+Folder Naming Standardization
+```
 ---
