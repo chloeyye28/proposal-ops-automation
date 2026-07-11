@@ -2,16 +2,12 @@
 
 ## About Me
 
-I'm a Business Operations and Workflow Automation professional focused on improving business processes through systems thinking and automation.
-
-I specialize in analyzing manual workflows, identifying inefficiencies, and building scalable solutions using Google Workspace tools and low-code automation.
+I'm a Coordination professional focused on improving business processes through systems thinking and low-code automation.
 
 My work sits at the intersection of:
 - Business Analysis
 - Process Improvement
 - Workflow Automation
-- Systems Design
-- Operations Optimization
 
 I enjoy turning repetitive, manual processes into structured, automated systems that improve efficiency, accuracy, and visibility.
 
