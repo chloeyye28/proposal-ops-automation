@@ -1,126 +1,50 @@
-# Hi, I'm CY (Chloe) 👋
+# Hi, I’m Chloe 👋
 
-## About Me
+I’m a Proposal Coordinator who specializes in **Google Apps Script development** to supercharge operations, eliminate manual bottlenecks, and turn Google Workspace into an automated database.
 
-I'm a Coordination professional focused on improving business processes through systems thinking and low-code automation.
-
-My work sits at the intersection of:
-- Business Analysis
-- Process Improvement
-- Workflow Automation
-
-I enjoy turning repetitive, manual processes into structured, automated systems that improve efficiency, accuracy, and visibility.
+I use **Google Apps Script** to turn my Google Sheets into the "control center" for my proposal workflows. These are the tools I’ve built to save my own time, reduce errors, and stop the endless copy-pasting.
 
 ---
 
-# Google Workspace Automation Portfolio
+## What I’m Automating
+I focus on the "Proposal Lifecycle"—getting docs organized, managing vendor quotes, and keeping the team on schedule.
 
-This repository showcases a collection of Google Apps Script-based automation projects designed to streamline business operations within Google Workspace.
+### 1. RFQ & Vendor Management
+*   **The Problem:** Chasing quotes, manually creating folders for every vendor, and saving emails as PDFs is a massive time-sink.
+*   **The Automation:** I wrote a script that monitors Gmail labels. When a quote arrives, it automatically saves the attachment to the right Drive folder, logs the details in my tracker, and archives the email.
+*   **What it does:** It keeps my inbox clean and my vendor data organized without me having to manually drag and drop files.
 
-These solutions focus on automating RFQ processing, vendor management, document workflows, and scheduling systems using Google Sheets as a central control layer.
+### 2. Team & Calendar Sync
+*   **The Problem:** Trying to keep track of everyone’s availability vs. project deadlines was always out of sync.
+*   **The Automation:** I built a system where I input project milestones into a Sheet, and the script pushes them to our shared Google Calendar. 
+*   **What it does:** It keeps our team on the same page and eliminates the "is this updated?" Slack messages.
+
+### 3. Proposal Folder & Doc Setup
+*   **The Problem:** Every time a new proposal kicks off, I was manually creating folders, sub-folders, and renaming templates.
+*   **The Automation:** A "one-click" script that generates our standard folder structure, sets up the necessary docs, and handles naming conventions.
+*   **What it does:** It turns a 15-minute manual setup into a 5-second process.
+
+---
+## The Path Forward: Building & Orchestrating
+I am constantly improving my automation workflows, and my focus is shifting toward **smarter orchestration**. My next steps include:
+
+*   **System Hierarchy:** Moving from standalone scripts to a structured, hierarchical system that manages complex proposal data flows more efficiently.
+*   **User-Friendly Web Apps:** I am transitioning these workflows into **HTML-based web apps** using Apps Script. My goal is to create intuitive interfaces so that anyone on my team can trigger these automations without ever needing to look at a line of code.
+*   **Version Control:** As these tools grow, I am implementing rigorous version updates in my scripts to ensure stability and scalability. 
+
+**Stay tuned**—I’m actively documenting this transition from "personal utility scripts" to "team-ready operational applications."
 
 ---
 
-## Core Technologies
+## My Toolkit
+I’m a self-taught automator. I know enough SQL and Python to be dangerous, but my bread and butter is **Google Apps Script**. 
 
-- Google Apps Script (JavaScript)
-- Google Sheets
-- Google Drive API
-- Gmail API
-- Google Calendar API
-- Google Forms
-- Google Workspace
+*   **Languages:** JavaScript (Google Apps Script)
+*   **Integrations:** Gmail, Drive, Calendar, Sheets, and Forms APIs
+*   **Philosophy:** "If it's manual, automate it." 
 
----
+### Personal Development
+I am currently leveling up my core programming skills in **Python and SQL** to make my automations even smarter. You can find my progress here:
 
-# Projects Overview
-
-## 1. RFQ Automation Suite
-
-End-to-end workflow automation for RFQ (Request for Quote) processing, vendor coordination, and document tracking.
-
-### Key Capabilities
-- Automated RFQ email generation
-- Vendor folder creation in Google Drive
-- Email and attachment archiving to PDF
-- Structured quote tracking and logging
-- Gmail label-based workflow management
-
-### Business Impact
-- Reduced manual administrative workload
-- Improved consistency in vendor communication
-- Increased traceability of RFQ documents
-- Standardized procurement workflow execution
-
----
-
-## 2. Team & Calendar Automation Suite
-
-Automation system for team scheduling, availability tracking, and project calendar synchronization.
-
-### Key Capabilities
-- Automated time-off and availability tracking
-- Google Calendar event generation from structured inputs
-- Weekly scheduling summaries
-- Project timeline synchronization
-- Calendar-based workload visibility
-
-### Business Impact
-- Reduced scheduling conflicts
-- Eliminated manual calendar updates
-- Improved team coordination and visibility
-- Increased operational planning efficiency
-
----
-
-## 3. Proposal & Project Submission Automation
-
-Document and folder automation system for standardized project setup and proposal management.
-
-### Key Capabilities
-- Automated Google Drive folder structure creation
-- Recursive folder duplication
-- Hierarchical folder numbering
-- Batch Google Docs to PDF conversion
-- Folder naming standardization
-
-### Business Impact
-- Reduced manual setup time for projects
-- Standardized documentation structure across teams
-- Improved file organization and consistency
-- Increased efficiency in proposal preparation workflows
-
----
-
-# Skills Demonstrated
-
-## Business & Process Skills
-- Business Process Analysis
-- Workflow Mapping & Optimization
-- Requirements Gathering
-- Operations Improvement
-- Systems Thinking
-
-## Technical Skills
-- Google Apps Script Development
-- API Integration (Drive, Gmail, Calendar)
-- Spreadsheet-driven automation systems
-- Workflow orchestration design
-
----
-
-# Summary
-
-These projects demonstrate my ability to design and implement end-to-end workflow automation systems within Google Workspace to improve operational efficiency and reduce manual work.
-
-They reflect a strong focus on business process improvement, automation design, and practical system implementation.
-
----
-
-# Focus Areas
-
-- Business Process Automation
-- Workflow Optimization
-- Business Systems Analysis
-- Low-Code / No-Code Development
-- Operational Efficiency Design
+*   **[[Link to your 100 Days of Python Repo]]([url](https://github.com/chloeyye28/100-days-of-python))**: I am documenting my daily homework, challenges, and code snippets from my 100-day Python course. 
+*   **Goal:** To transition from "Apps Script automator" to a more versatile developer capable of building complex backend logic using Python.
