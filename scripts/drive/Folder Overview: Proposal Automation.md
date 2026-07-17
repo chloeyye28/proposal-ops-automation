@@ -97,6 +97,21 @@ Five Google Apps Script tools that automate repetitive Google Drive operations f
 
 ---
 
+## Tool #6: Universal File & Folder Renamer
+
+**What it does:** Performs "Find and Replace" operations on filenames within a specific Google Drive folder. It also automatically strips "Copy of" prefixes from filenames during the process.
+
+**Why:** Renaming files one-by-one is slow, and Drive has no native "batch replace" feature. This tool brings the familiar "CTRL+H" functionality directly to your files, saving time and ensuring naming consistency.
+
+**How to use:**
+1. Enter the target folder URL in cell B1 of the "Batch Files Rename Tool" sheet.
+2. Enter the text you want to find in cell B2.
+3. Run the `startUniversalRenamer()`
+
+**Output:**
+- A summary alert box displaying the total number of files scanned and the total number of files successfully renamed.
+  
+---
 ## Quick Start
 
 All tools expect:
