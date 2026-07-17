@@ -39,11 +39,11 @@ I am constantly improving my automation workflows, and my focus is shifting towa
 
 *   **Languages:** JavaScript (Google Apps Script)
 *   **Integrations:** Gmail, Drive, Calendar, Sheets, and Forms APIs
-*   **Philosophy:** "If it's manual, automate it." 
-
+*   **Philosophy:** "If there’s a pattern, there’s a better way. I’m here to build it." 
+---
 ## Personal Development
 
 I am currently leveling up my core programming skills in **Python and SQL** to make my automations even smarter. You can find my progress here:
 
-*   **[[Link to your 100 Days of Python Repo]]([url](https://github.com/chloeyye28/100-days-of-python))**: I am documenting my daily homework, challenges, and code snippets from my 100-day Python course. 
+*   **[https://github.com/chloeyye28/100-days-of-python]**: I am documenting my daily homework, challenges, and code snippets from my 100-day Python course. 
 *   **Goal:** To transition from "Apps Script automator" to a more versatile developer capable of building complex backend logic using Python.
