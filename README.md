@@ -35,15 +35,14 @@ I am constantly improving my automation workflows, and my focus is shifting towa
 **Stay tuned**—I’m actively documenting this transition from "personal utility scripts" to "team-ready operational applications."
 
 ---
-
 ## My Toolkit
-I’m a self-taught automator. I know enough SQL and Python to be dangerous, but my bread and butter is **Google Apps Script**. 
 
 *   **Languages:** JavaScript (Google Apps Script)
 *   **Integrations:** Gmail, Drive, Calendar, Sheets, and Forms APIs
 *   **Philosophy:** "If it's manual, automate it." 
 
-### Personal Development
+## Personal Development
+
 I am currently leveling up my core programming skills in **Python and SQL** to make my automations even smarter. You can find my progress here:
 
 *   **[[Link to your 100 Days of Python Repo]]([url](https://github.com/chloeyye28/100-days-of-python))**: I am documenting my daily homework, challenges, and code snippets from my 100-day Python course. 
