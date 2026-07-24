@@ -1,8 +1,6 @@
 # Hi, I’m Chloe 👋
 
-I’m a Proposal Coordinator who specializes in **Google Apps Script development** to supercharge operations, eliminate manual bottlenecks, and turn Google Workspace into an automated database.
-
-I use **Google Apps Script** to turn my Google Sheets into the "control center" for my proposal workflows. These are the tools I’ve built to save my own time, reduce errors, and stop the endless copy-pasting.
+As a Proposal Coordinator with a passion for process improvement, I build **Google Apps Script** solutions that streamline proposal and operational workflows. Using Google Sheets as a central workspace, I've developed tools that automate repetitive tasks, improve data accuracy, and reduce the manual effort required to manage RFQs, documents, and reporting activities.
 
 ---
 
